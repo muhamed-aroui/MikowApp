@@ -6,7 +6,6 @@
     android:padding="16dp"
     android:id="@+id/list"
     android:orientation="vertical"
-    tools:context=".NumbersActivity"
     >
 
 </ListView>
