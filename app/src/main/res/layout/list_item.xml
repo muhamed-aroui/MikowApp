@@ -1,18 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:padding="16dp">
-    <TextView
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/tan_background"
+    android:minHeight="88dp">
+    <ImageView
+        android:layout_width="88dp"
+        android:layout_height="88dp"
+        android:id="@+id/icon_image"
+
+        android:src="@drawable/family_daughter"/>
+    <LinearLayout
+        android:id="@+id/text_container"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/mikow_text_view"
-        />
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/default_text_view"
-        />
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="16dp"
+        >
+        <TextView
+            style="@style/MiwokWordsStyle"
+            android:id="@+id/mikow_text_view"
+            tools:text="lutti"
+            android:gravity="bottom"
+            />
+        <TextView
+           style="@style/DefaultWordsStyle"
+            android:id="@+id/default_text_view"
+            tools:text="one"
+            android:gravity="top"
+            />
+    </LinearLayout>
+
 
 </LinearLayout>
