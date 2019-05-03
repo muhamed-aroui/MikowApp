@@ -11,26 +11,39 @@
         android:id="@+id/icon_image"
 
         android:src="@drawable/family_daughter"/>
-    <LinearLayout
-        android:id="@+id/text_container"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:paddingLeft="16dp"
-        >
-        <TextView
-            style="@style/MiwokWordsStyle"
-            android:id="@+id/mikow_text_view"
-            tools:text="lutti"
-            android:gravity="bottom"
-            />
-        <TextView
-           style="@style/DefaultWordsStyle"
-            android:id="@+id/default_text_view"
-            tools:text="one"
-            android:gravity="top"
-            />
-    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="88dp">
+
+        <LinearLayout
+            android:id="@+id/text_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="16dp">
+
+            <TextView
+                style="@style/MiwokWordsStyle"
+                android:id="@+id/mikow_text_view"
+                tools:text="lutti"
+                android:gravity="bottom" />
+
+            <TextView
+                style="@style/DefaultWordsStyle"
+                android:id="@+id/default_text_view"
+                tools:text="one"
+                android:gravity="top" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="16dp"
+            android:src="@drawable/baseline_play_arrow_white_24dp" />
+    </RelativeLayout>
 
 
 </LinearLayout>
